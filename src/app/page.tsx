@@ -1,20 +1,20 @@
 import Navbar from "@/sections/Navbar";
-import Hero from "@/sections/Hero";
-import LogoTicker from "@/sections/LogoTicker";
-import Introduction from "@/sections/Introduction";
-import Features from "@/sections/Features";
-import Faqs from "@/sections/Faqs";
+import Homepage from "@/sections/Home";
+import Clients from "@/sections/Clients";
+import SkilledProfessionals from "@/sections/SkilledProfessionals";
+import Hiring from "@/sections/Hiring";
+import WhoWeServe from "@/sections/WhoWeServe";
 import Footer from "@/sections/Footer";
 
 export default function Home() {
     return (
         <>
             <Navbar />
-            <Hero />
-            <LogoTicker />
-            <Introduction />
-            <Features />
-            <Faqs />
+            <Homepage />
+            <Clients />
+            <SkilledProfessionals />
+            <Hiring />
+            <WhoWeServe />
             <Footer />
         </>
     );
