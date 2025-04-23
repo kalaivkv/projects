@@ -47,7 +47,7 @@ export default function Introduction() {
                             ))}
                         </span>
                         <span className="text-lime-400 block">
-                            That's what Taizo do.
+                            That&apos;s what Taizo do.
                         </span>
                     </div>
                 </div>

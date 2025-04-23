@@ -90,7 +90,7 @@ export default function Features() {
                                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent relative">
                                     <span>deserve more</span>
                                 </span>{" "}
-                                let's find the role
+                                let&apos;s find the role
                             </p>
                         </div>
                     </FeatureCard>

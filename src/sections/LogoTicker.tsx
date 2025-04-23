@@ -26,11 +26,11 @@ const logos = [
 export default function LogoTicker() {
     return (
         <section className="py-4 overflow-x-clip">
-            <div className="conatiner">
+            <div className="container">
                 <h3 className="text-center text-white/50 text-xl">
                     Our Clients
                 </h3>
-                <div className="flex overflow-hidden mt-12 [mask-image:kinear-gradient(to_right,trsansparent,black_10%,black_90%,transaparent)]">
+                <div className="flex overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <motion.div
                         animate={{ x: "-50%" }}
                         transition={{
@@ -42,8 +42,8 @@ export default function LogoTicker() {
                     >
                         {Array.from({ length: 2 }).map((_, i) => (
                             <Fragment key={i}>
-                                {logos.map((logo) => (
-                                    <Image src={logo.image} alt="" />
+                                {logos.map((logo, index) => (
+                                    <Image key={`${i}-${index}`} src={logo.image} alt={`Logo ${index + 1}`} />
                                 ))}
                             </Fragment>
                         ))}
