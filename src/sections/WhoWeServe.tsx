@@ -1,6 +1,6 @@
 "use client";
 
-import Tag from "@/components/Tag";
+import Tag from "../components/Tag";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
@@ -28,7 +28,7 @@ const faqs = [
     },
 ];
 
-export default function Faqs() {
+export default function WhoWeServe() {
     const [selectedIndex, setSelectedIndex] = useState(0);
     return (
         <section className="py-24">

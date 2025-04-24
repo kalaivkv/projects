@@ -1,13 +1,13 @@
 "use client";
 
-import logo1 from "@/assets/images/1.jpg";
-import logo2 from "@/assets/images/2.jpg";
-import logo3 from "@/assets/images/3.jpg";
-import logo4 from "@/assets/images/4.jpg";
-import logo5 from "@/assets/images/5.jpg";
-import logo6 from "@/assets/images/6.jpg";
-import logo7 from "@/assets/images/7.jpg";
-import logo8 from "@/assets/images/8.jpg";
+import logo1 from "../assets/images/1.jpg";
+import logo2 from "../assets/images/2.jpg";
+import logo3 from "../assets/images/3.jpg";
+import logo4 from "../assets/images/4.jpg";
+import logo5 from "../assets/images/5.jpg";
+import logo6 from "../assets/images/6.jpg";
+import logo7 from "../assets/images/7.jpg";
+import logo8 from "../assets/images/8.jpg";
 import Image from "next/image";
 import { Fragment } from "react";
 import { motion } from "framer-motion";
@@ -23,7 +23,7 @@ const logos = [
     { image: logo8 },
 ];
 
-export default function LogoTicker() {
+export default function Clients() {
     return (
         <section className="py-4 overflow-x-clip">
             <div className="container">

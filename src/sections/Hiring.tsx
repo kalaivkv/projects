@@ -3,12 +3,11 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import Tag from "@/components/Tag";
-import FeatureCard from "@/components/FeatureCard";
+import Tag from "../components/Tag";
+import FeatureCard from "../components/FeatureCard";
+import Key from "../components/Key";
 
-import Key from "@/components/Key";
-
-export default function Features() {
+export default function Hiring() {
     const ref = useRef(null);
     const isInView = useInView(ref, { amount: 0.2 });
 

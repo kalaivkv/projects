@@ -1,6 +1,6 @@
 "use client";
 
-import Tag from "@/components/Tag";
+import Tag from "../components/Tag";
 import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -8,7 +8,7 @@ import { twMerge } from "tailwind-merge";
 const text = `Our recruitment professionals make it simpler than ever to find your next opportunity in manufacturing companies by bridging the gap between skilled workforce and leading manufacturing companies.`;
 const words = text.split(" ");
 
-export default function Introduction() {
+export default function SkilledProfessionals() {
     const scrollTarget = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: scrollTarget,

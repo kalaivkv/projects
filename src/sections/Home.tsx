@@ -1,6 +1,6 @@
-import Button from "@/components/Button";
+import Button from "../components/Button";
 
-export default function HeroContentOnly() {
+export default function Home() {
     return (
         <section className="py-24 overflow-x-clip">
             <div className="container relative">

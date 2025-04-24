@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import taizo from "@/assets/images/taizo.svg";
-import Button from "@/components/Button";
+import taizo from "../assets/images/taizo.svg";
+import Button from "../components/Button";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
@@ -11,7 +11,7 @@ const navLinks = [
     { label: "Home", href: "#" },
     { label: "JobSeeker", href: "#JobSeeker" },
     { label: "About", href: "#About" },
-    { label: "Contact", href: "#Contact", className: "hidden md:hidden lg:inline-flex" }, // Hide on md, show on lg
+    { label: "Contact", href: "#Contact", className: "hidden md:hidden lg:inline-flex" }, 
 ];
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <>
-            {/* Navbar with drop animation */}
+           
             <motion.section
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -29,7 +29,7 @@ export default function Navbar() {
                 <div className="container max-w-5xl">
                     <div className="border border-white/15 rounded-[27px] bg-neutral-950/70 backdrop-blur">
                         <div className="grid grid-cols-2 md:grid-cols-3 p-2 px-4 md:pr-2 items-center">
-                            {/* Logo */}
+                           
                             <div>
                                 <Image
                                     src={taizo}
@@ -38,7 +38,7 @@ export default function Navbar() {
                                 />
                             </div>
 
-                            {/* Nav Links - Now visible on md screens */}
+                        
                             <div className="md:flex justify-center items-center hidden">
                                 <nav className="flex gap-6 font-medium">
                                     {navLinks.map((link) => (
@@ -54,7 +54,7 @@ export default function Navbar() {
                                 </nav>
                             </div>
 
-                            {/* Mobile Menu & Buttons */}
+                           
                             <div className="flex justify-end gap-4">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ export default function Navbar() {
                                     ></line>
                                 </svg>
 
-                                {/* Login & Signup Buttons */}
+                              
                                 <Button
                                     variant="secondary"
                                     className="hidden md:inline-flex items-center"
@@ -117,7 +117,7 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        {/* Mobile Navigation - Animate Presence */}
+                       
                         <AnimatePresence>
                             {isOpen && (
                                 <motion.div
